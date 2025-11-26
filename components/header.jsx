@@ -93,12 +93,13 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/partner"
+            href="/about"
             onClick={closeSidebar}
-            className={linkClasses("/partner")}
+            className={linkClasses("/about")}
           >
-            Partner
+            About
           </Link>
+
           <Link
             href="/privacy-policy"
             onClick={closeSidebar}
@@ -114,18 +115,11 @@ export default function Header() {
             Terms & Conditions
           </Link>
           <Link
-            href="/contact"
+            href="/partner"
             onClick={closeSidebar}
-            className={linkClasses("/contact")}
+            className={linkClasses("/partner")}
           >
-            Contact Us
-          </Link>
-          <Link
-            href="/become-partner"
-            onClick={closeSidebar}
-            className={linkClasses("/become-partner")}
-          >
-            Become A Partner
+            Partner
           </Link>
         </nav>
       </div>
