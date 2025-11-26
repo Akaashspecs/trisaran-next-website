@@ -44,7 +44,7 @@ const useAnimatedNumber = (finalNumber) => {
 };
 
 // Component to display a single animated count item
-const AnimatedCountItem = ({ text, num }) => {
+const AnimatedCountItem = ({ text, num, total }) => {
   const animatedNum = useAnimatedNumber(num);
 
   // A helper function to format the number with commas (optional)
@@ -55,11 +55,12 @@ const AnimatedCountItem = ({ text, num }) => {
   return (
     <div
       className={`flex flex-col justify-center items-center px-10 md:px-15 lg:px-20 ${
-        num !== 1000 && " sm:border-l border-dashed border-white/20 "
+        Number(num) !== 1000 && " sm:border-l border-dashed border-white/20 "
       }`}
     >
       <h3 className="text-[#87e995] text-3xl font-medium">
-        {formatNumber(animatedNum)} +
+        {formatNumber(animatedNum)}
+        {total}+
       </h3>
       <p className="text-[#bcc1ce] text-[14px] text-center">{text}</p>
     </div>

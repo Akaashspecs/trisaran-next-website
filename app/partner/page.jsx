@@ -6,30 +6,31 @@ import { PiHandWithdraw } from "react-icons/pi";
 function Partner() {
   const financeOnline = [
     {
-      text: "Your personalized website",
+      text: "A personalized app built just for you",
       img: "mobile.png",
       ss: "home.jpeg",
     },
     {
-      text: "Your personalized referral code offline marketing material",
+      text: "Quickly create, organize, and track your customer leads",
+      img: "mobile.png",
+      ss: "bank-tile.jpeg",
+    },
+    {
+      text: "Promote your business using your referral code",
       img: "mobile.png",
       ss: "profile.jpeg",
     },
+
     {
-      text: "One app to manage all your transactions",
+      text: "One app to manage all your transactions effortlessly",
       img: "mobile.png",
       ss: "withdrawal.jpeg",
-    },
-    {
-      text: "Easy to create leads of your customers",
-      img: "mobile.png",
-      ss: "bank-tile.jpeg",
     },
   ];
 
   const trust = [
     {
-      head: "100+ of Partners",
+      head: "1000+ of Partners",
       desc: "across 1000+ small towns and cities",
       img: <IoPeopleOutline />,
     },
@@ -148,10 +149,13 @@ function Partner() {
           className="absolute bottom-0 left-1/2 lg:left-auto lg:translate-x-0 -translate-x-1/2 lg:right-20 -z-10 px-7 "
         />
       </div>
-      <div className="w-full bg-[#37445a] h-[96px]  text-center  justify-center items-center text-white text-sm sm:text-base md:text-xl lg:text-2xl gap-2 md:gap-5 flex flex-col md:flex-row  px-10">
+      <div className=" w-full bg-[#37445a] h-[96px]  text-center  justify-center items-center text-white text-sm sm:text-base md:text-xl lg:text-2xl gap-2 md:gap-5 flex flex-col md:flex-row  px-10">
         Are you looking to become a Trisaran Money Partner?
-        <div className="px-6 bg-green-600 rounded-full py-1 md:py-2 text-base hover:scale-110 shadow-2xl transform duration-150">
-          Click Here
+        <div className="px-6 bg-green-600 rounded-full py-1 md:py-2 text-base hover:scale-110 shadow-2xl transform duration-150 lg:hidden block">
+          Download App
+        </div>
+        <div className="px-6 bg-green-600 rounded-full py-1 md:py-2 text-base hover:scale-110 shadow-2xl transform duration-150 hidden lg:block">
+          Register
         </div>
       </div>
       {/* finance dukan. #F8F8F8*/}
@@ -175,7 +179,7 @@ function Partner() {
                   />
                   <img
                     src={item.ss}
-                    className="absolute top-0 left-1/2  -translate-x-1/2 ml-[6px] rounded-lg w-[75px] spa  max-h-[120px] sm:max-h-[148px] mx-auto"
+                    className="absolute top-0 left-1/2  -translate-x-1/2 ml-[6px] rounded-lg md:w-[75px]  spa  max-h-[120px] sm:max-h-[148px] mx-auto"
                   />
                 </div>
 
@@ -325,14 +329,20 @@ function Partner() {
         <div className="my-30 flex justify-center">
           <div className="max-w-[700px] lg:max-w-[1600px] flex rounded-[50px] min-h-[310px]  md:h-[500px] lg:h-full w-full bg-[#37445a] px-10 2xl:px-24 pt-10 relative overflow-hidden  mx-5 md:mx-10">
             <div className="w-full text-center lg:text-start">
-              <div className="text-white text-[24px] md:text-[30px]">
+              <div className="text-white text-[24px] md:text-[30px] lg:block hidden">
                 Register as a Trisaran Partner
+              </div>
+              <div className="text-white text-[24px] md:text-[30px] lg:hidden block">
+                Download Trisaran App
               </div>
               <div className="mt-1 text-white text-[18px] md:text-[22px]">
                 Grow your business. Grow your career
               </div>
-              <div className="mx-auto lg:mx-0 mt-10 px-6 w-fit text-black bg-white rounded-full py-3 md:py-3 text-base hover:scale-110 shadow-2xl transform duration-150">
+              <div className=" lg:block hidden mx-auto lg:mx-0 mt-10 px-6 w-fit text-black bg-white rounded-full py-3 md:py-3 text-base hover:scale-110 shadow-2xl transform duration-150">
                 Register Now
+              </div>
+              <div className="lg:hidden block mx-auto lg:mx-0 mt-10 px-6 w-fit text-black bg-white rounded-full py-3 md:py-3 text-base hover:scale-110 shadow-2xl transform duration-150">
+                Download App
               </div>
             </div>
             <div className="h-[450px] md:hidden"></div>

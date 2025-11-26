@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Register = () => {
   return (
     <div className="py-10 flex justify-center">
@@ -9,8 +11,13 @@ const Register = () => {
           <div className="mt-1 text-white text-[18px] md:text-[22px]">
             Fulfill your needs. Secure your future
           </div>
-          <div className="mx-auto lg:mx-0 mt-10 px-6 w-fit text-white bg-green-600 rounded-full py-1 md:py-2 text-base hover:scale-110 shadow-2xl transform duration-150">
-            Register Now
+          <div className="mx-auto  lg:mx-0 mt-10 py-1 md:py-2  w-fit text-white bg-green-600 rounded-full text-base hover:scale-110 shadow-2xl transform duration-150">
+            <Link
+              href={"/partner"}
+              className=" w-full h-full px-6 py-1 md:py-2 rounded-full "
+            >
+              Register Now
+            </Link>
           </div>
         </div>
         <div className="h-[450px] md:hidden"></div>

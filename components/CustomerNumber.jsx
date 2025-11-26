@@ -2,9 +2,9 @@ import AnimatedCountItem from "./AnimatedCountItem";
 
 const CustomerNumber = () => {
   const data = [
-    { text: "Loan Disbursement", num: 1000 },
-    { text: "DSA partners", num: 100 },
-    { text: "Bank Tie Ups", num: 80 },
+    { text: "Loan Disbursement", num: "1000", total: "Cr" },
+    { text: "DSA partners", num: "100", total: "" },
+    { text: "Bank Partnerships", num: "80", total: "" },
   ];
 
   return (
@@ -17,7 +17,12 @@ const CustomerNumber = () => {
       </div>
       <div className="flex flex-col sm:flex-row  h-full sm:h-[150px] gap-5 sm:gap-0 mt-[40px] pb-8 sm:pb-3">
         {data.map((item, i) => (
-          <AnimatedCountItem key={i} text={item.text} num={item.num} />
+          <AnimatedCountItem
+            key={i}
+            text={item.text}
+            num={item.num}
+            total={item.total}
+          />
         ))}
       </div>
     </div>

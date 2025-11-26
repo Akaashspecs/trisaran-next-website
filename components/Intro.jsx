@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import { Autoplay, EffectFade, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const Intro = () => {
   const slides = [
@@ -49,13 +49,13 @@ const Intro = () => {
   ];
 
   return (
-    <div className="relative    sm:h-[500px] md:py-0 py-10">
-      <div className="bg-[linear-gradient(0.59deg,#edfcff_50.93%,rgba(243,253,255,0)_100%)] bottom-0 w-full z-10 flex    h-full">
+    <div className="relative   md:py-0 py-10">
+      <div className="bg-[linear-gradient(0.59deg,#edfcff_50.93%,rgba(243,253,255,0)_100%)] bottom-0 w-full  z-10 flex    h-full">
         <img
           src="/top-banner-background.png"
           className=" h-[320px] absolute bottom-0 object-cover right-0"
         />
-        <Swiper
+        {/* <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
           effect="slide"
           loop={true}
@@ -100,7 +100,42 @@ const Intro = () => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+
+        <div className="flex w-full justify-around md:flex-row flex-col  md:mt-10 md:pl-15">
+          <div className="relative w-full  max-w-[950px]   flex flex-col  items-center md:items-start mb-10 md:mb-0 px-5 md:px-0">
+            <div className="text-[30px] lg:text-[45px] lg:leading-13 max-w-[940px] mt-3 md:mt-10 text-center md:text-start ">
+              Best Platform to sell{" "}
+              <h1 className=" inline text-green-500/70 font-semibold">
+                {" "}
+                Financial Services
+              </h1>{" "}
+              online
+            </div>
+            <div className="mt-5  lg:text-[20px] text-gray-800 max-w-[600px] text-center md:text-start">
+              Learn & Earn From Anywhere By Referring Customers And Educating
+              Them On The Products Being Offered.
+            </div>
+            <div className="bg-blue-500 w-fit px-3 py-3 text-white rounded-2xl mt-5 block lg:hidden">
+              Download Now
+            </div>
+            <Link
+              href={"/partner"}
+              className="bg-blue-500 w-fit px-3 py-3 text-white rounded-2xl mt-5 hidden lg:block"
+            >
+              Register Now
+            </Link>
+          </div>
+          <div className="relative md:mb-10  lg:block flex justify-center">
+            <Image
+              width={512}
+              height={521}
+              alt="app"
+              className=""
+              src={"/mobile-app.png"}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

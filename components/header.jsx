@@ -21,7 +21,12 @@ export default function Header() {
     <header className="w-full bg-white shadow h-[60px] flex items-center">
       <div className="max-full  lg:px-[50px] px-5 mx-auto flex items-center justify-between w-full h-full">
         <h1 className="text-xl font-bold h-full flex items-center">
-          <Image width={"130"} height={"140"} src={"/trisaran-logo.png"} />
+          <Image
+            alt="logo"
+            width={"130"}
+            height={"140"}
+            src={"/trisaran-logo.png"}
+          />
         </h1>
 
         {/* Desktop Navigation */}
@@ -44,11 +49,17 @@ export default function Header() {
           >
             Terms & Conditions
           </Link>
-          <Link href="/contact" className={linkClasses("/contact")}>
-            Contact Us
-          </Link>
+
           <Link href="/partner" className={linkClasses("/partner")}>
             Become A Partner
+          </Link>
+          <Link
+            href="/partner"
+            className={
+              "bg-blue-500 text-white px-3 py-2 rounded-3xl hover:shadow-lg cursor-pointer hidden lg:block"
+            }
+          >
+            Advisor Login
           </Link>
         </nav>
 
