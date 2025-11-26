@@ -1,30 +1,19 @@
-"use client";
 import Link from "next/link";
-import { IoLogoWhatsapp } from "react-icons/io5";
-
-const openWhatsApp = () => {
-  const phoneNumber = "+918881791704"; // Add your number without + or spaces
-  const message = "Hello, I want to know more about your services!";
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
-
-  window.open(url, "_blank");
-};
+import MessageTab from "./message";
 
 const Footer = () => {
   return (
     <div>
       <div className="bg-[#0f1a2a] px-5 py-10 md:p-10  ">
-        <div className="  max-w-[1600px] mx-auto ">
+        <div className="  max-w-[1600px] mx-auto mb-[50px] ">
           <div className="text-white/75 text-[13px]   grid-cols-2 md:grid-cols-4 gap-5 hidden sm:grid">
             <div className="max-w-[320px]">
               <div>About Us</div>
               <div>
-                TRISARAN GRAMEEN MICRO APPEX FEDERATION
-                <br /> Company Category : Microfinance (Section 8) Section 8
-                Licence No: 159984 Address: Anjanvel Bouddhwadi, RGPPL Anjanvel,
-                Guhagar, Ratnagiri, Maharashtra 415634
+                TRISARAN MONEY was established in 2024 with a mission to promote
+                rural development, financial inclusion, and women empowerment
+                across India. the organization is committed to supporting
+                economically weaker sections in rural and semi-urban areas.
               </div>
             </div>
 
@@ -43,6 +32,9 @@ const Footer = () => {
                 <Link href={"/terms-and-conditions"} className="w-fit">
                   Terms And Conditions{" "}
                 </Link>
+                <Link href={"/partner"} className="w-fit">
+                  Partner
+                </Link>
               </div>
             </div>
             <div className=" max-w-[280px]  md:max-w-[320px]">
@@ -56,19 +48,24 @@ const Footer = () => {
 
             <div className="pl-6 md:pl-0">
               <div>
+                <div>Contact Us</div>
+
+                {/* <IoLogoWhatsapp
+                  onClick={() => openWhatsApp()}
+                  className=" text-white rounded-full p-1 bg-green-500 text-[35px] cursor-pointer mt-1"
+                /> */}
+                <div>
+                  TRISARAN GRAMEEN MICRO APPEX FEDERATION
+                  <br /> Company Category : Microfinance (Section 8) Section 8
+                  Licence No: 159984 Address: Anjanvel Bouddhwadi, RGPPL
+                  Anjanvel, Guhagar, Ratnagiri, Maharashtra 415634
+                </div>
                 <div className="lg:hidden block">
-                  <div>Download Our Trisaran App:</div>
+                  <div className=" mt-2">Download Our Trisaran App:</div>
                   <div className="bg-blue-500 w-fit px-2 py-1 rounded-sm mt-1">
                     Download App
                   </div>
                 </div>
-
-                <div className="md:mt-0 mt-2">Contact Us</div>
-
-                <IoLogoWhatsapp
-                  onClick={() => openWhatsApp()}
-                  className=" text-white rounded-full p-1 bg-green-500 text-[35px] cursor-pointer mt-1"
-                />
               </div>
             </div>
           </div>
@@ -95,19 +92,26 @@ const Footer = () => {
                   <div className="bg-blue-500 w-fit px-2 py-1 rounded-sm mt-1">
                     Download App
                   </div>
-                  <div className="mt-2">Contact Us</div>
-
-                  <IoLogoWhatsapp
-                    onClick={() => openWhatsApp()}
-                    className=" text-white rounded-full p-1 bg-green-500 text-[35px] cursor-pointer mt-1"
-                  />
                 </div>
               </div>
             </div>
-
             <div className=" w-full">
               <div>About Us</div>
               <div className="w-full">
+                TRISARAN GRAMEEN MICRO APPEX FEDERATION
+                <br /> Company Category : Microfinance (Section 8) Section 8
+                Licence No: 159984 Address: Anjanvel Bouddhwadi, RGPPL Anjanvel,
+                Guhagar, Ratnagiri, Maharashtra 415634
+              </div>
+            </div>
+            <div>
+              <div className="mt-2">Contact Us</div>
+
+              {/* <IoLogoWhatsapp
+                    onClick={() => openWhatsApp()}
+                    className=" text-white rounded-full p-1 bg-green-500 text-[35px] cursor-pointer mt-1"
+                  /> */}
+              <div>
                 TRISARAN GRAMEEN MICRO APPEX FEDERATION
                 <br /> Company Category : Microfinance (Section 8) Section 8
                 Licence No: 159984 Address: Anjanvel Bouddhwadi, RGPPL Anjanvel,
@@ -127,10 +131,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 text-[12px] px-3 text-gray-500 max-w-[1600px] w-full mx-auto">
+      <div className="py-4 text-[12px] px-3 text-gray-500 max-w-[1600px] w-full mx-auto  bg-white">
         © 2025 <span className="font-semibold">Trisaran Money</span>. All rights
         reserved
       </div>
+      <MessageTab />
     </div>
   );
 };

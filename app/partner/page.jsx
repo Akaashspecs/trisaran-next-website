@@ -133,9 +133,10 @@ function Partner() {
           </h3>
           <div className="h-[6px] w-[80px] bg-[#4eb543]  my-[15px] "></div>
           <div className="max-w-[600px] text-sm md:text-base lg:text-start 2xl:text-[20px] text-center text-[#707070]">
-            Sell financial products created especially for the 300Mn underserved
-            lower middle income salaried employees and their families, and help
-            them achieve their financial goals
+            Your reliable partner for personal, home, business, and car loans.
+            We simplify the loan process with expert guidance, bank
+            partnerships, and fast approvals with ensuring the best interest
+            rates, easy documentation, and quick disbursal..
           </div>
           <div className="text-center lg:text-start text-[14px] text-[#414141] mt-5 2xl:text-[16px]">
             Finance ki online dukaan app in 5 languages to reach customers
