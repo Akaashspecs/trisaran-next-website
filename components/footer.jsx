@@ -41,7 +41,8 @@ const Footer = () => {
               <div>Register Office</div>
               <div>
                 TRISARAN GRAMEEN MICRO APPEX FEDERATION
-                <br /> Registration Date : 29-08-2024 CIN: U88900MH2024NPL431405
+                <br /> Registration Date : 29-08-2024 <br /> CIN:
+                U88900MH2024NPL431405
                 <br /> Email: contact@trisaranmoney.in
               </div>
             </div>
@@ -123,8 +124,8 @@ const Footer = () => {
               <div>Register Office</div>
               <div>
                 TRISARAN GRAMEEN MICRO APPEX FEDERATION
-                <br /> Registration Date : 29-08-2024 <br />
-                CIN: U88900MH2024NPL431405
+                <br /> Registration Date : 29-08-2024
+                <br /> CIN: U88900MH2024NPL431405
                 <br /> Email: contact@trisaranmoney.in
               </div>
             </div>

@@ -7,24 +7,24 @@ function Partner() {
   const financeOnline = [
     {
       text: "A personalized app built just for you",
-      img: "mobile.png",
-      ss: "home.jpeg",
+      img: "/mobile.png",
+      ss: "/home.jpeg",
     },
     {
       text: "Quickly create, organize, and track your customer leads",
-      img: "mobile.png",
-      ss: "bank-tile.jpeg",
+      img: "/mobile.png",
+      ss: "/bank-tile.jpeg",
     },
     {
       text: "Promote your business using your referral code",
-      img: "mobile.png",
-      ss: "profile.jpeg",
+      img: "/mobile.png",
+      ss: "/profile.jpeg",
     },
 
     {
       text: "One app to manage all your transactions effortlessly",
-      img: "mobile.png",
-      ss: "withdrawal.jpeg",
+      img: "/mobile.png",
+      ss: "/withdrawal.jpeg",
     },
   ];
 
@@ -49,11 +49,11 @@ function Partner() {
   ];
 
   const earn = [
-    { type: "Loan agents", img: "agent.png" },
-    { type: "Former bank employee", img: "bank-employee.png" },
-    { type: "Insurance agents", img: "ins-agent.png" },
-    { type: "Wealth advisors", img: "piggy.png" },
-    { type: "BFSI professionals", img: "bfsi.png" },
+    { type: "Loan agents", img: "/agent.png" },
+    { type: "Former bank employee", img: "/bank-employee.png" },
+    { type: "Insurance agents", img: "/ins-agent.png" },
+    { type: "Wealth advisors", img: "/piggy.png" },
+    { type: "BFSI professionals", img: "/bfsi.png" },
   ];
 
   const grow = [
@@ -73,32 +73,32 @@ function Partner() {
 
   const success = [
     {
-      img: "product.png",
+      img: "/product.png",
       heading: "Customized products",
       desc: "Especially created for people that traditional finance institution do not serve",
     },
     {
-      img: "demand.png",
+      img: "/demand.png",
       heading: "Huge unmet demand",
       desc: "300Mn customers and their families in small towns across India",
     },
     {
-      img: "commision.png",
+      img: "/commision.png",
       heading: "Great commissions",
       desc: "Enjoy the industry’s leading commissions",
     },
     {
-      img: "payment.png",
+      img: "/payment.png",
       heading: "7-day payment cycle",
       desc: "Your earnings credited 4 times in a month!",
     },
     {
-      img: "customer.png",
+      img: "/customer.png",
       heading: "Own your customers",
       desc: "We don’t sell directly to customers",
     },
     {
-      img: "app.png",
+      img: "/app.png",
       heading: "App in your language",
       desc: "5 languages to choose from",
     },
@@ -108,19 +108,19 @@ function Partner() {
       desc: "I joined Trisaran 5 months ago. The app is very user friendly and the personalized website and marketing features helped me get more customers. The partner support team is very supportive and cooperative as well. All my queries have been resolved by them quickly. ",
       name: "Aakash Saxena",
       tag: "Trisaran Certified Partner",
-      image: "Aakash.png",
+      image: "/Aakash.png",
     },
     {
       desc: "I feel proud to be a Trisaran Partner. This job has earned me respect in society. Also I am very happy to help people when they are in financial difficulties. The appreciation that I get from my customers motivates me to always do my best.",
       name: "Sanjay Yadav",
       tag: "Trisaran Certified Partner",
-      image: "Sanjay.png",
+      image: "/Sanjay.png",
     },
     {
       desc: "I am glad that I chose to associate myself with Trisaran. They have some unique financial products and selling those to people in need makes me very happy because through Trisaran I could make an impact in people’s lives. They have the best commissions in the market.",
       name: "Adesh Chaudhary",
       tag: "Trisaran Certified Partner",
-      image: "Vinay.png",
+      image: "/Vinay.png",
     },
   ];
 
