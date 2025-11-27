@@ -20,7 +20,7 @@ export default function Header() {
     <header className="w-full bg-white shadow h-[60px] flex items-center">
       <div className="max-full  lg:px-[50px] px-5 mx-auto flex items-center justify-between w-full h-full">
         <h1 className="text-xl font-bold h-full flex items-center">
-          <img className="h-[50px]" src={"/trisaran-logo.png"} />
+          <img className="h-[50px]" src={"/Trisaran-logo.png"} />
         </h1>
 
         {/* Desktop Navigation */}
